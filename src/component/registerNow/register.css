@@ -1,0 +1,22 @@
+/* Add this CSS to your existing stylesheet */
+.sticky-register-button {
+  position: fixed;
+  /* Adjust as needed */
+  right: 70px; /* Adjust as needed */
+  z-index: 1000;
+  /* background-color: #007bff; Button background color */
+  /* color: #fff; Button text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sticky-register-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+.sticky-register-button.active {
+  bottom: 20px;
+  transform: scale(1.05); /* Slightly enlarge the button when active */
+}

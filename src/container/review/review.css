@@ -1,0 +1,58 @@
+/* Review */
+.review {
+  background-color: #f2f2f2;
+}
+.review .section-title,
+.review .section-description {
+  color: var(--text-color);
+}
+.testi-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  row-gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+}
+.review-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.review-quote {
+  padding: 0 15rem;
+  text-align: center;
+}
+.quote-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+.testi-personDetails {
+  flex-direction: column;
+}
+.testi-personDetails .name {
+  font-size: 1.8rem;
+  font-weight: var(--font-medium);
+}
+
+/* swiper btn */
+.review .swiper-navBtn {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.review .swiper-button-next {
+  right: 2rem;
+  transform: translateY(2rem);
+}
+.review .swiper-button-prev {
+  left: 2rem;
+  transform: translateY(2rem);
+}
+.review .swiper-navBtn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+}

@@ -1,0 +1,41 @@
+.scrollUpBtn {
+    position: fixed;
+    bottom: -30%;
+    right: 3rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    border-radius: 4px;
+    color: var(--primary-color-hover);
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--white-color);
+    z-index: var(--z-overlay);
+    justify-content: center;
+    transition: var(--tran-0-3);
+  }
+  .scrollUpBtn-active  {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    border-radius: 4px;
+    color: var(--primary-color-hover);
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--white-color);
+    z-index: var(--z-overlay);
+    justify-content: center;
+    transition: var(--tran-0-3);
+  }
+
+  .scrollUp-icon {
+    opacity: 0.9;
+    transition: var(--tran-0-3);
+  }
+  .scrollUp-btn:hover .scrollUp-icon {
+    opacity: 1;
+  }
+  

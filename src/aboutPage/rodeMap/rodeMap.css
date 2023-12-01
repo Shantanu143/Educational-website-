@@ -1,0 +1,95 @@
+/* rodeMap.css */
+
+.timeline {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .roadmap {
+    position: relative;
+    margin-left: 20px;
+    padding: 10px 0;
+  }
+  
+  .roadmap-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .roadmap-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+  }
+  
+  .step {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .step::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    border-left: 2px dashed #ccc;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .step:first-child::before {
+    display: none;
+  }
+  
+  .roadmap-item p {
+    margin: 0;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+    position: relative;
+  }
+  
+  .roadmap-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-left: 2px solid #007bff;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Adding an arrow-like graph element */
+  .roadmap-item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -26px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007bff;
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .roadmap {
+      margin-left: 0;
+    }
+  }
+  

@@ -1,0 +1,80 @@
+/* TallyCourseInfo.css */
+.course-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .img-tab {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .img-tab img {
+    max-width: 100%;
+  }
+  
+  .info-content {
+    flex: 2;
+  }
+  
+  .info-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .course-container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .img-tab {
+      flex: 1;
+      padding-right: 20px;
+    }
+  
+    .info-content {
+      flex: 2;
+    }
+  }
+/* CourseInformation.css */
+.course-info {
+    padding: 20px;
+  }
+  
+  .course-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .course-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .course-info li {
+    font-size: 16px;
+  }
+  
+  /* Animation classes */
+  .course-info ul li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .course-info ul li.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
